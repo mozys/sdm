@@ -58,6 +58,7 @@ myscript="$0 $@"
 [ "$1" != "" ] && dir="$1" || dir="/usr/local/sdm"
 
 [ "$SDMLAN" != "" ] && src=$SDMLAN || src="https://raw.githubusercontent.com/gitbls/sdm/master"
+[ "$SDMSRC" != "" ] && src=$SDMSRC || src=$src
 [ "$SDMLAN" != "" ] && curl="scp" || curl="curl"
 
 sudo=""
